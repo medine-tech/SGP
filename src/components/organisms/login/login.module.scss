@@ -1,0 +1,25 @@
+
+.box-login{
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  border-radius: 15px;
+  background: #141627;
+  backdrop-filter: blur(9.5px);
+  padding: 80px 100px 130px;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+}
+
+.c1{
+  padding: 20px;
+}
+
+.c2{
+  border: 2px solid blue;
+}
+
+.c3{
+  background-color: #ec6e34;
+}

@@ -1,0 +1,85 @@
+@import "../../../styles/setting/variables";
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: $secondary-color;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: $default-color;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &.btn-primary {
+    color: $white-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      border-color: darken($primary-color, 10%);
+    }
+
+    &:active {
+      background-color: darken($primary-color, 20%);
+      border-color: darken($primary-color, 20%);
+    }
+  }
+
+  &.btn-secondary {
+    color: $white-color;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+      border-color: darken($secondary-color, 10%);
+    }
+  }
+
+  &.btn-outline-primary {
+    color: $primary-color;
+    border-color: $primary-color;
+    background-color: transparent;
+
+    &:hover {
+      color: $white-color;
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  &.btn-outline-secondary {
+    color: $secondary-color;
+    border-color: $secondary-color;
+
+    &:hover {
+      color: $white-color;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+
+  &.btn-sm {
+    font-size: 0.875rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.2rem;
+    height: 1.8rem;
+  }
+
+  &.btn-lg {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+  }
+
+  &.block {
+    display: block;
+    width: 100%;
+  }
+}

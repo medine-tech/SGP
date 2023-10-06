@@ -1,0 +1,60 @@
+.main{
+    display: grid;
+    grid-template-columns: 18rem 1fr;
+    grid-template-rows: 4rem 1fr;
+    height: 100vh;
+  }
+  
+  .container{
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+    padding: 20px 30px;
+  }
+  
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #27235a;
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+    padding: 0 25px;
+  }
+
+  .div-name-user{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  .name-user{
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    padding: 0;
+    line-height: 0;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-app-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    column-gap: 16px;
+  }
+
+  .nav-app-description_logo{
+    width: 75px;
+    height: 75px;
+  }
+
+  .section{
+    height: 400px;
+    background-color: #2e3257;
+    padding: 20px;
+  }
