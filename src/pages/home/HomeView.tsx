@@ -8,8 +8,8 @@ function HomeView() {
   const [nombreUsuario, setNombreUsuario] = useState('');
 
   useEffect(() => {
-    const storedName = "Jose Pereira";
-    //const storedName = localStorage.getItem('nameUser');
+    //const storedName = "Jose Pereira";
+    const storedName = localStorage.getItem('nameUser');
     if (storedName) {
       setNombreUsuario(storedName);
     }

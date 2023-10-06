@@ -20,6 +20,7 @@ describe("Prueba de login y página de home", () => {
  
    it("Verificar home", () => {
       cy.contains("#name_app", "SGP").should("be.visible")
+      cy.contains("#name_app", "SGP").should("be.visible")
       cy.get(".icon-setting").should("exist");
       cy.contains("#name-user", "Jose Pereira").should("be.visible")
       cy.contains(".section-facturas", "No hay facturas.").should("be.visible")
